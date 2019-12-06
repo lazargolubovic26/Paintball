@@ -1,0 +1,1046 @@
+@font-face {
+  src: url("BlackOpsOne-Regular.ttf");
+  font-family: 'mojFont1';
+}
+
+@font-face {
+  src: url("PermanentMarker-Regular.ttf");
+  font-family: 'mojFont2';
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'mojFont1';
+}
+
+h2 {
+  color: #139e13;
+  font-size: 3.5em;
+  text-align: center;
+  font-family: 'mojFont2';
+  margin: 5% 0%;
+}
+
+body {
+  max-width: 100%;
+  background-image: url("../img/body.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+body nav {
+  background: #000;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'mojFont1';
+  z-index: 5;
+}
+
+@media (max-width: 1000px) {
+  body nav {
+    display: none;
+  }
+}
+
+body nav .logo {
+  width: 30%;
+}
+
+body nav .logo .logoPic {
+  max-width: 100%;
+  height: auto;
+  width: 170px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+body nav .logo .logoPic1 {
+  width: 100px;
+}
+
+body nav .menu {
+  width: 55%;
+}
+
+body nav .menu ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0px;
+}
+
+body nav .menu ul li a {
+  font-size: 1.35em;
+  letter-spacing: 2px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  text-decoration: none;
+}
+
+body nav .menu ul li a:hover {
+  color: #37a537;
+}
+
+body .pojaviSide {
+  position: fixed;
+  z-index: 999;
+  top: 4%;
+  left: 4%;
+  text-decoration: none;
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  body .pojaviSide {
+    display: block;
+  }
+}
+
+body .pojaviSide i {
+  color: #37c737;
+  font-size: 2em;
+}
+
+body .backTop {
+  position: fixed;
+  z-index: 999;
+  text-decoration: none;
+  bottom: 3%;
+  right: 3%;
+}
+
+body .backTop i {
+  color: #38bd38;
+  font-size: 2em;
+}
+
+body .sideNavigation {
+  width: 320px;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 999;
+  -webkit-transform: translateX(-400px);
+          transform: translateX(-400px);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+body .sideNavigation ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+body .sideNavigation ul li {
+  margin: 10% 0%;
+}
+
+body .side1 {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+body main {
+  width: 100%;
+  height: 100vh;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'mojFont2';
+}
+
+body main .zatamnjeno {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .zatamnjeno h1 {
+  color: white;
+  font-size: 3.5em;
+  text-align: center;
+  font-family: 'mojFont2';
+}
+
+body main .zatamnjeno .linkoviPrvaSekcija {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3%;
+}
+
+@media (max-width: 768px) {
+  body main .zatamnjeno .linkoviPrvaSekcija {
+    width: 65%;
+  }
+}
+
+body main .zatamnjeno .linkoviPrvaSekcija a {
+  width: 40%;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 2% 4%;
+  background-color: #139e13;
+  color: #fff;
+  font-size: 1.5em;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body main .zatamnjeno .linkoviPrvaSekcija a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+body .welcome .welcome1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'mojFont2';
+}
+
+body .welcome .welcome1 .blokoviTri .blokoviKolona {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 768px) {
+  body .welcome .welcome1 .blokoviTri .blokoviKolona {
+    width: 80%;
+    margin: 0px auto;
+  }
+}
+
+body .welcome .welcome1 .blokoviTri .blokoviKolona .zatamniBlokovi1 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 9%;
+}
+
+@media (max-width: 1000px) {
+  body .welcome .welcome1 .blokoviTri .blokoviKolona .zatamniBlokovi1 {
+    background-color: rgba(10, 71, 10, 0.158);
+  }
+}
+
+body .welcome .welcome1 .blokoviTri .blokoviKolona .zatamniBlokovi1 h3 {
+  color: aliceblue;
+  padding-top: 2%;
+}
+
+body .welcome .welcome1 .blokoviTri .blokoviKolona .zatamniBlokovi1 a {
+  text-decoration: none;
+  background-color: #139e13;
+  color: #fff;
+  padding: 3% 5%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+body .welcome .welcome1 .blokoviTri .blokoviKolona .zatamniBlokovi1 a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+body .slideSekcija {
+  background-image: url("../img/notGame.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30% 50%;
+}
+
+body .slideSekcija .slideKont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body .slideSekcija .slideKont .doleGore {
+  text-decoration: none;
+  margin: 2% 0%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .slideSekcija .slideKont .doleGore:hover > i {
+  color: #289428;
+  background-color: #000;
+}
+
+body .slideSekcija .slideKont .doleGore .faTurn {
+  font-size: 2em;
+  color: #000;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background-color: #139e13;
+  border-radius: 60%;
+  padding: 5px 8px;
+}
+
+body .slideSekcija .slideKont .faTurn1 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+body .slideSekcija .slideKont p {
+  color: #139e13;
+  font-family: 'mojFont1';
+}
+
+body .slideSekcija .slideKont .crnaSlova {
+  text-decoration: none;
+  background-color: #139e13;
+  color: #fff;
+  padding: 1% 2%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  margin-bottom: 4vh;
+}
+
+body .slideSekcija .slideKont .crnaSlova:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+body .slik {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5% 0%;
+}
+
+body .slik .slikaSlik img {
+  margin: 0px auto;
+}
+
+body section #drzacAutor {
+  width: 80%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1000px) {
+  body section #drzacAutor {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  body section #drzacAutor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body section #drzacAutor #sadrzajAutor {
+  text-align: center;
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  body section #drzacAutor #sadrzajAutor {
+    width: 70%;
+    margin-bottom: 10%;
+  }
+}
+
+body section #drzacAutor #sadrzajAutor h3 {
+  color: #139e13;
+  font-family: 'mojFont2';
+  font-size: 1.8em;
+  padding-bottom: 4%;
+}
+
+body section #drzacAutor #sadrzajAutor p {
+  text-align: justify;
+  color: #fff;
+  font-family: 'mojFont1';
+  padding-bottom: 4%;
+}
+
+body section #drzacAutor #sadrzajAutor a {
+  background-color: #139e13;
+  padding: 2% 7%;
+}
+
+body section #drzacAutor #sadrzajAutor a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+body main #forReservation {
+  max-width: 100%;
+  height: 100vh;
+  background-image: url("../img/bgZone.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main #forReservation h1 {
+  text-align: center;
+  font-size: 3.0em;
+  color: #139e13;
+}
+
+body main #forReservation p {
+  color: #139e13;
+  text-align: center;
+}
+
+body .rezervacija {
+  margin: 5% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .rezervacija h1 {
+  color: #3bbe3b;
+  font-size: 3em;
+  text-align: center;
+}
+
+body .rezervacija form {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  margin: 5% 0%;
+  color: #85c985;
+}
+
+@media (max-width: 768px) {
+  body .rezervacija form {
+    width: 90%;
+  }
+}
+
+body .rezervacija form .sirinaPolja {
+  width: 60%;
+  background: transparent;
+  border: 3px solid white;
+  color: #4ec04e;
+  padding: .8%;
+}
+
+@media (max-width: 768px) {
+  body .rezervacija form .sirinaPolja {
+    width: 100%;
+  }
+}
+
+body .rezervacija form #datumDolaska {
+  width: 50%;
+  background: transparent;
+  border: 3px solid white;
+  color: #4ec04e;
+  padding: .8%;
+}
+
+@media (max-width: 768px) {
+  body .rezervacija form #datumDolaska {
+    width: 100%;
+  }
+}
+
+body .rezervacija form p {
+  padding: 1.5% 0%;
+  font-size: 1.2em;
+  visibility: hidden;
+  color: red;
+}
+
+body .rezervacija form .zoneRadio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .rezervacija form .zoneRadio .zone0 {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .rezervacija form .zoneRadio .zone0 label {
+  padding: 0% 3%;
+}
+
+body .rezervacija form #poruka {
+  width: 60%;
+  background: transparent;
+  border: 3px solid white;
+  padding: 1%;
+  resize: none;
+  color: #4ec04e;
+}
+
+@media (max-width: 768px) {
+  body .rezervacija form #poruka {
+    width: 100%;
+  }
+}
+
+body .rezervacija form #sendDugme {
+  width: 20%;
+  padding: 1% 0%;
+  background: transparent;
+  border: 3px solid white;
+  margin-top: 3%;
+  color: #50b950;
+}
+
+@media (max-width: 768px) {
+  body .rezervacija form #sendDugme {
+    width: 40%;
+  }
+}
+
+body .rezervacija form #poslataPoruka {
+  font-family: 'mojFont1';
+  color: #289428;
+}
+
+body main #forZone {
+  max-width: 100%;
+  height: 100vh;
+  background-image: url("../img/bgZone.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main #forZone h1 {
+  text-align: center;
+  font-size: 3.0em;
+  color: #139e13;
+}
+
+body main #forZone p {
+  color: #139e13;
+  text-align: center;
+}
+
+body .naslovZone1234 {
+  color: whitesmoke;
+  margin: 10% 0% 10% 0%;
+}
+
+body .zikZak {
+  margin-bottom: 10%;
+}
+
+body .zikRed {
+  margin: 10% 0%;
+}
+
+body .zikRed .relativan {
+  background: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 0px;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  body .zikRed .relativan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body .zikRed .relativan .slikaKolone {
+  width: 65%;
+}
+
+@media (max-width: 1000px) {
+  body .zikRed .relativan .slikaKolone {
+    width: 100%;
+  }
+}
+
+body .zikRed .relativan .slikaKolone img {
+  max-width: 100%;
+  height: auto;
+}
+
+body .zikRed .relativan .tekstKolone {
+  width: 35%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  padding-right: 4%;
+}
+
+@media (max-width: 1000px) {
+  body .zikRed .relativan .tekstKolone {
+    width: 100%;
+  }
+}
+
+body .zikRed .relativan .tekstKolone a {
+  text-decoration: none;
+  color: red;
+  background-color: rgba(19, 158, 19, 0.22);
+  border-radius: 10px;
+  padding: 3% 6%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+body .zikRed .relativan .tekstKolone a:hover {
+  background-color: #139e13;
+  color: #fff;
+}
+
+body .zikRed .relativan .sliding {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25%;
+  left: 0px;
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+@media (max-width: 1000px) {
+  body .zikRed .relativan .sliding {
+    display: none;
+  }
+}
+
+body .zikRed .relativan .sliding a {
+  text-decoration: none;
+  margin-bottom: 0px;
+  color: white;
+  font-size: 1.6em;
+  text-align: center;
+  font-family: 'mojFont2';
+}
+
+body .zikRed .relativanReverese {
+  background: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 0px;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  body .zikRed .relativanReverese {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body .zikRed .relativanReverese .slikaKolone {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 1000px) {
+  body .zikRed .relativanReverese .slikaKolone {
+    width: 100%;
+  }
+}
+
+body .zikRed .relativanReverese .slikaKolone img {
+  max-width: 100%;
+  height: auto;
+}
+
+body .zikRed .relativanReverese .tekstKolone {
+  width: 35%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  padding-left: 5%;
+}
+
+body .zikRed .relativanReverese .tekstKolone a {
+  text-decoration: none;
+  color: red;
+  background-color: rgba(19, 158, 19, 0.22);
+  border-radius: 10px;
+  padding: 3% 6%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+body .zikRed .relativanReverese .tekstKolone a:hover {
+  background-color: #139e13;
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+  body .zikRed .relativanReverese .tekstKolone {
+    width: 100%;
+  }
+}
+
+body .zikRed .relativanReverese .slidingReverse {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25%;
+  right: 0px;
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+@media (max-width: 1000px) {
+  body .zikRed .relativanReverese .slidingReverse {
+    display: none;
+  }
+}
+
+body .zikRed .relativanReverese .slidingReverse a {
+  text-decoration: none;
+  margin-bottom: 0px;
+  color: white;
+  font-size: 1.6em;
+  text-align: center;
+  font-family: 'mojFont2';
+}
+
+footer {
+  background-color: rgba(13, 58, 2, 0.349);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15vh;
+}
+
+@media (max-width: 768px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer #copyright {
+  color: #139e13;
+  font-size: 1.4em;
+}
+
+footer #aboutSite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #aboutSite ul {
+  padding-left: 20px;
+}
+
+@media (max-width: 540px) {
+  footer #aboutSite ul {
+    padding-left: 8px;
+  }
+}
+
+footer #aboutSite ul li {
+  list-style-type: none;
+}
+
+footer #aboutSite ul li a {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+@media (max-width: 540px) {
+  footer #aboutSite ul li a {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

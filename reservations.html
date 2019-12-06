@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Lazar Golubović">
+    <meta name="keywords" content="join,reserve,pick out,select zone,enjoy the fun"/>
+    <meta name="decription" content="Book your place and join us in the fun. Hard work deserves a hard break too."/>
+    <link rel="icon" href="img/paintball.ico"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>  
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Paintball Club | Reservations</title>
+</head>
+<body>
+    <!-- Navigacija -->
+    <nav>
+        <div class="logo">
+        </div>
+        <div class="menu">
+        </div>
+    </nav>
+    <div class="sideNavigation">
+        <div class="logo">   
+        </div>
+        <div class="menu">
+        </div>
+    </div>
+    <a href="#" class='pojaviSide'><i class="fas fa-bars"></i></a>
+    <a href="#" class='backTop'><i class="fas fa-arrow-up"></i></a>
+    <!-- Velika slika -->
+    <main>
+            <div id="forReservation">
+                <h1>Join our team and enjoy the fun</h1>
+                <p>find your place in our team</p>
+            </div>
+        </main>
+    <section class="rezervacija">
+        <h1>Schedule your shoot !</h1>
+        <form action="index.html" method="POST">
+            <input type="text" placeholder="Your full name here... Example: John Doe" class='sirinaPolja izbaciError' id='polje1' name='fullname'/>
+            <p id='fullnameError'>You didn't put your full name !</p>
+            <input type="email" placeholder="Your email here... Example: lazar.golubovic.26.18@ict.edu.rs" class='sirinaPolja izbaciError' id='polje2' name="mail"/>
+            <p id='mailError'>You didn't put your email !</p>
+            <input type="text" placeholder="Your desired date (only 2020)... Example: 2020-12-09" class="izbaciError" maxlength="10" id="datumDolaska" name='dateComing'/>
+            <p id='dateComingError'>You didn't put the date of coming in correct format !</p>
+            <div class="zoneRadio">
+                <div class="zone0">
+                    <input type="radio" name='zona' value='zona1' id="zone1"/><label for="zone1">Zona 1</label>
+                    <input type="radio" name='zona' value='zona2' id="zone2"/><label for="zone2">Zona 2</label>
+                    <input type="radio" name='zona' value='zona3' id="zone3"/><label for="zone3">Zona 3</label>
+                    <input type="radio" name='zona' value='zona3' id="zone4"/><label for="zone4">Zona 4</label>
+                </div>
+            </div>
+            <p id="zoneError">You didn't choose the zone !</p>
+            <textarea name="poruka" id="poruka" class="izbaciError" cols="30" rows="10" placeholder="Your message"></textarea>
+            <p id='porukaError'>You didn't type anything !</p>
+            <br/>
+            <input type="submit" id="sendDugme" value="Send"/>
+            <p id='poslataPoruka'>Congratulations ! We will come back to you shortly.</p>
+        </form>
+    </section>
+    <footer>
+            <div id="copyright">
+                <p>&copy Paintball Club 2019/20.</p>
+            </div>
+            <div id="aboutSite">
+                <ul>
+                    <li><a href="sitemap.xml">Sitemap</a></li>
+                </ul>
+                <ul>
+                    <li><a href="css/style.css">css</a></li>
+                </ul>
+                <ul>
+                    <li><a href="sitemap.xml">scss</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">documentation</a></li>
+                </ul>
+            </div>
+        </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src='js/navigacija.js'></script>
+    <script src='js/forma.js'></script>
+</body>
+</html>

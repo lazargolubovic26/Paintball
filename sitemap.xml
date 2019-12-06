@@ -1,0 +1,26 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>index</loc>
+<lastmod>2019-12-06</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>zones</loc>
+<lastmod>2019-12-06</lastmod>
+<changefreq>mothly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>aboutUs</loc>
+<lastmod>2019-12-06</lastmod>
+<changefreq>yearly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>reservations</loc>
+<lastmod>2019-12-06</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+</urlset>
